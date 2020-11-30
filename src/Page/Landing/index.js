@@ -39,8 +39,8 @@ const useStyles = makeStyles((theme) => ({
     tagLine: {
         [theme.breakpoints.up('md')]: {
             position: 'absolute',
-            right: '20rem',
-            top: '10rem'
+            right: '15rem',
+            top: '20rem'
             // margin: '50px, 50px 0 0 '
         },
         [theme.breakpoints.down('md')]: {

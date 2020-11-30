@@ -41,10 +41,17 @@ const useStyles = makeStyles((theme) => ({
     },
     socialIcon: {
         color: '#454545',
-        padding: '0 5px 0 0'
+        padding: '0 5px 0 0',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '4rem',
+            padding: '5px'
+        }
     },
     socialContainer: {
-        // justifyContent: 'center'
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center',
+            margin: '0 auto'
+        }
     }
 }));
 

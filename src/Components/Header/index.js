@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   appBar: {
-    backgroundColor: '#98dae4',
+    background: 'linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(152,218,218,0.75 ) 70%, #98dae4 100%);',
     boxShadow: 'none',
   },
   toolbar: {
@@ -81,6 +81,7 @@ const pages = [
   },
 ];
 
+
 export default function Header(props) {
   const classes = useStyles();
   const [openSideMenu, setOpenSideMenu] = useState(false);
@@ -93,9 +94,11 @@ export default function Header(props) {
   const handleOpenSideMenu = () => {
     setOpenSideMenu(true);
   };
+  const test = (e) => console.log();
+
   return (
     <>
-      <div className={classes.root}>
+      <div className={classes.root} onScroll={test}>
         <AppBar position="fixed" className={clsx(classes.appBar, {})}>
           <Toolbar className={classes.toolbar}>
             <Grid container>
